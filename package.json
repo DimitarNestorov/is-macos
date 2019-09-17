@@ -1,0 +1,19 @@
+{
+	"name": "is-macos",
+	"version": "0.0.1",
+	"description": "Small tool that gives exit code 0 if it's running on macOS",
+	"main": "./dist/index.js",
+	"bin": "./dist/cli.js",
+	"repository": "git@github.com:dimitarnestorov/is-macos.git",
+	"author": "Dimitar Nestorov <opensource@dimitarnestorov.com>",
+	"license": "MIT",
+	"scripts": {
+		"prepublishOnly": "yarn run build",
+		"test": "yarn run build",
+		"build": "tsc"
+	},
+	"devDependencies": {
+		"@types/node": "^12.7.5",
+		"typescript": "^3.6.3"
+	}
+}
